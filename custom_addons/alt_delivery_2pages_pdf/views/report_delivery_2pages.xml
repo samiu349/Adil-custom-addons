@@ -1,0 +1,25 @@
+<odoo>
+  <!-- Template hérité de report_delivery_document -->
+  <template id="report_delivery_2pages" inherit_id="stock.report_delivery_document">
+    <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+      <t t-call="web.external_layout">
+        <div class="page landscape" style="display: flex; flex-direction: row; justify-content: space-between;">
+          <!-- Première copie -->
+          <div style="width: 49%; border-right: 1px dashed gray; padding-right: 5px;">
+            <t t-call="stock.report_delivery_document_content"/>
+          </div>
+
+          <!-- Deuxième copie -->
+          <div style="width: 49%; padding-left: 5px;">
+            <t t-call="stock.report_delivery_document_content"/>
+          </div>
+        </div>
+      </t>
+    </xpath>
+  </template>
+
+  <!-- Template principal avec t-name pour être utilisé dans report -->
+  <template id="report_delivery_2pages_full">
+    <t t-call="alt_delivery_2pages_pdf.report_delivery_2pages"/>
+  </template>
+</odoo>

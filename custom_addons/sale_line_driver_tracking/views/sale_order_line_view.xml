@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_order_form_line_chauffeur" model="ir.ui.view">
+        <field name="name">sale.order.line.form.chauffeur</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="after">
+                <field name="chauffeur_id"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form//field[@name='product_id']" position="after">
+                <field name="chauffeur_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

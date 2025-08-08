@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_account_my_payment_form_inherit_check_clean" model="ir.ui.view">
+        <field name="name">account.payment.form.inherit.check</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount']" position="after">
+                <field name="use_existing_check" string="Utiliser un chèque client"
+                       invisible="payment_type != 'outbound'"/>
+                <field name="check_id" domain="[('type','=','incoming')]" string="Chèque client"
+                       invisible="payment_type != 'outbound' or not use_existing_check"/>
+            </xpath>
+            <xpath expr="//header" position="inside">
+
+                <button name="action_open_related_check" string="Voir le chèque"
+                        type="object" class="btn-secondary"
+                        invisible="check_id == False"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

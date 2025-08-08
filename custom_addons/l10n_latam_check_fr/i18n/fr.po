@@ -1,0 +1,338 @@
+# French translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-05-23 09:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "(Check %s)"
+msgstr "(Check %s) (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid ""
+"* Allows putting numbers manually\n"
+"* Enables Check Cash-In Date feature\n"
+"* Disables printing"
+msgstr ""
+"* Allows putting numbers manually\n"
+"* Enables Check Cash-In Date feature\n"
+"* Disables printing (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid ""
+"<span invisible=\"l10n_latam_check_current_journal_id\">Not in "
+"Wallet</span>"
+msgstr ""
+"<span invisible=\"l10n_latam_check_current_journal_id\">Not in "
+"Wallet</span> (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Account Chart Template"
+msgstr "Modèle de plan comptable"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "All selected checks must be on the same journal and on hand"
+msgstr "All selected checks must be on the same journal and on hand (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "All the selected checks must be posted"
+msgstr "All the selected checks must be posted (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Cancel"
+msgstr "Cancel (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check"
+msgstr "Check (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"Check \"%s\" is not anymore in journal \"%s\", it seems it has been moved"
+" by another payment."
+msgstr ""
+"Check \"%s\" is not anymore in journal \"%s\", it seems it has been moved"
+" by another payment. (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check %s delivered"
+msgstr "Check %s delivered (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check %s received"
+msgstr "Check %s received (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check '%s' is on journal '%s', it can't be received it again"
+msgstr "Check '%s' is on journal '%s', it can't be received it again (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Bank"
+msgstr "Check Bank (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Cash-In Date"
+msgstr "Check Cash-In Date (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Current Journal"
+msgstr "Check Current Journal (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Issuer VAT"
+msgstr "Check Issuer VAT (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Issuer Vat"
+msgstr "Check Issuer Vat (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Number"
+msgstr "Check Number (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Operations"
+msgstr "Check Operations (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Check Transfer"
+msgstr "Check Transfer (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Checks Management"
+msgstr "Checks Management (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Checks Mass Transfers"
+msgstr "Checks Mass Transfers (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Checks on hand"
+msgstr "Checks on hand (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Company"
+msgstr "Company (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Create Transfers"
+msgstr "Create Transfers (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Created by"
+msgstr "Created by (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Created on"
+msgstr "Created on (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Current Journal"
+msgstr "Current Journal (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Customer"
+msgstr "Customer (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Date from when you can cash in the check, turn the check into cash"
+msgstr "Date from when you can cash in the check, turn the check into cash (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Destination Journal"
+msgstr "Destination Journal (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Display Name"
+msgstr "Display Name (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Existing Third Party Checks"
+msgstr "Existing Third Party Checks (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "ID"
+msgstr "ID (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid ""
+"It seems you're trying to move a check with a date (%s) prior to last "
+"operation done with the check (%s). This may be wrong, please double "
+"check it. By continue, the last operation on the check will remain being "
+"%s"
+msgstr ""
+"It seems you're trying to move a check with a date (%s) prior to last "
+"operation done with the check (%s). This may be wrong, please double "
+"check it. By continue, the last operation on the check will remain being "
+"%s (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Journal"
+msgstr "Journal (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "L10N Latam Check Number"
+msgstr "L10N Latam Check Number (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "L10N Latam Check Warning Msg"
+msgstr "L10N Latam Check Warning Msg (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Last Updated by"
+msgstr "Last Updated by (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Last Updated on"
+msgstr "Last Updated on (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid ""
+"Manual checks (electronic/deferred) can't be used together with check "
+"manual sequencing (check printing functionality), please choose one or "
+"the other. Journals: %s"
+msgstr ""
+"Manual checks (electronic/deferred) can't be used together with check "
+"manual sequencing (check printing functionality), please choose one or "
+"the other. Journals: %s (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Memo"
+msgstr "Memo (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "New Third Party Checks"
+msgstr "New Third Party Checks (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"Other checks were found with same number, issuer and bank. Please double "
+"check you are not encoding the same check more than once. List of other "
+"payments/checks: %s"
+msgstr ""
+"Other checks were found with same number, issuer and bank. Please double "
+"check you are not encoding the same check more than once. List of other "
+"payments/checks: %s (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Own Checks"
+msgstr "Own Checks (FR)"
+
+msgctxt "model:account.payment:guessed"
+msgid "Payment Date"
+msgstr "Payment Date (FR)"
+
+msgctxt "model:account.payment:guessed"
+msgid "Payment Methods"
+msgstr "Méthodes de paiement"
+
+msgctxt "model:account.payment:guessed"
+msgid "Payments"
+msgstr "Paiements"
+
+msgctxt "model:account.payment:guessed"
+msgid "Register Payment"
+msgstr "Enregistrer un paiement"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Rejected Third Party Checks"
+msgstr "Rejected Third Party Checks (FR)"
+
+#, python-format
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Selected check \"%s\" is not posted"
+msgstr "Selected check \"%s\" is not posted (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"The amount of the payment (%s) does not match the amount of the selected "
+"check (%s). Please try to deselect and select the check again."
+msgstr ""
+"The amount of the payment (%s) does not match the amount of the selected "
+"check (%s). Please try to deselect and select the check again. (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"The check(s) '%s' is already used on another payment. Please select "
+"another check or deselect the check on this payment."
+msgstr ""
+"The check(s) '%s' is already used on another payment. Please select "
+"another check or deselect the check on this payment. (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"The currency of the payment (%s) and the currency of the check (%s) must "
+"be the same."
+msgstr ""
+"The currency of the payment (%s) and the currency of the check (%s) must "
+"be the same. (FR)"
+
+msgctxt "model:account.payment:guessed"
+msgid ""
+"The register payment wizard should only be called on account.payment "
+"records."
+msgstr ""
+"The register payment wizard should only be called on account.payment "
+"records. (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Third Party Checks"
+msgstr "Third Party Checks (FR)"
+
+#, python-format
+msgctxt "model:account.payment:guessed"
+msgid ""
+"This third party check is already used to make one or more payments. "
+"Please reset them to draft first.\n"
+"Payments made with this check: %s"
+msgstr ""
+"This third party check is already used to make one or more payments. "
+"Please reset them to draft first.\n"
+"Payments made with this check: %s (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Unmark sent is not implemented for electronic or deferred checks"
+msgstr "Unmark sent is not implemented for electronic or deferred checks (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "Use electronic and deferred checks"
+msgstr "Use electronic and deferred checks (FR)"
+
+msgctxt "model:account.move:guessed"
+msgid ""
+"You can't use checks when paying invoices of different partners or same "
+"partner without grouping"
+msgstr ""
+"You can't use checks when paying invoices of different partners or same "
+"partner without grouping (FR)"
+
+msgctxt "model:ir.actions.act_window:guessed"
+msgid "⇒ Check Operations"
+msgstr "⇒ Check Operations (FR)"
+

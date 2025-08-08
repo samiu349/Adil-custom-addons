@@ -1,0 +1,45 @@
+<odoo>
+    <record id="view_account_check_form" model="ir.ui.view">
+        <field name="name">account.check.form</field>
+        <field name="model">account.check</field>
+        <field name="arch" type="xml">
+            <form string="Chèque">
+                <header>
+                    <button name="action_mark_received"
+                            string="Marquer comme reçu"
+                            type="object"
+                            class="btn-secondary"
+                            attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+
+                    <button name="action_mark_cleared"
+                            string="Encaisser"
+                            type="object"
+                            class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'received')]}"/>
+
+                    <button name="action_mark_returned"
+                            string="Rejeter"
+                            type="object"
+                            class="btn-danger"
+                            attrs="{'invisible': [('state', '!=', 'received')]}"/>
+                </header>
+
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="state"/>
+                        <field name="partner_id"/>
+                        <field name="amount"/>
+                        <field name="payment_id"/>
+                        <field name="check_number"/>
+                        <field name="bank"/>
+                        <field name="issue_date"/>
+                        <field name="memo"/>
+                        <field name="currency_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

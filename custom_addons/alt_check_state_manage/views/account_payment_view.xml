@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_account_payment_form_add_buttons" model="ir.ui.view">
+        <field name="name">account.payment.form.add.buttons</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="l10n_latam_check.view_account_payment_form_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_reconcile_check"
+                        type="object"
+                        string="Régler chez la banque"
+                        class="btn btn-primary"
+                        visibility="state == 'posted' and not is_matched"/>
+                <button name="action_send_to_bank"
+                        type="object"
+                        string="Envoyer vers la banque"
+                        class="btn btn-secondary"
+                        visibility="state == 'posted' and not is_move_sent"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

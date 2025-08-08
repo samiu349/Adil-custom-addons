@@ -1,0 +1,14 @@
+<odoo>
+    <menuitem id="menu_account_check_root" name="Chèques" sequence="100"/>
+
+     <record id="action_account_check" model="ir.actions.act_window">
+        <field name="name">Chèques</field>
+        <field name="res_model">account.check</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <menuitem id="menu_account_check"
+              name="Gestion des chèques"
+              parent="menu_account_check_root"
+              action="alt_account_check_management_advanced.action_account_check"/>
+</odoo>

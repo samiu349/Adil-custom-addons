@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Cacher le bouton "Imprimer Étiquette" dans stock.picking -->
+    <record id="view_picking_form_inherit" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.hide.label.button</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[contains(@name, 'action_open_label_type')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Cacher les colonnes avg_cost et total_value dans la vue produit stockée -->
+    <record id="view_product_stock_tree_hide_cost" model="ir.ui.view">
+        <field name="name">product.product.tree.inherit.hide.cost</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock_account.product_product_stock_tree_inherit_stock_account"/>
+        <field name="arch" type="xml">
+
+            <!-- Cacher Coût Moyen -->
+            <xpath expr="//field[@name='avg_cost']" position="attributes">
+                <attribute name="groups">alt_larmouss_custom.group_stock_view_cost_hidden</attribute>
+            </xpath>
+
+            <!-- Cacher Valeur Totale -->
+            <xpath expr="//field[@name='total_value']" position="attributes">
+                <attribute name="groups">alt_larmouss_custom.group_stock_view_cost_hidden</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

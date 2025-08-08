@@ -1,0 +1,21 @@
+{
+    'name': 'ALT Larmouss Custom',
+    'version': '1.0',
+    'category': 'Customization',
+    'summary': 'Personnalisations spécifiques pour Larmouss',
+    'author': 'Alternative IT',
+    'website': 'https://votre-site.com',
+    'depends': ['base', 'purchase', 'sale', 'stock'],
+    'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'views/res_partner_view.xml',
+        'views/purchase_order_view.xml',
+        'views/sale_order_view.xml',
+        'views/stock_picking_view.xml',
+        'views/menu_views.xml',
+     ],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
+}

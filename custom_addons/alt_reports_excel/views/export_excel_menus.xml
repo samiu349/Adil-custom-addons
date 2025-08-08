@@ -1,0 +1,39 @@
+<odoo>
+
+    <!-- Sous Facturation -->
+    <menuitem id="menu_account_export_excel_root"
+              name="Rapports Excel"
+
+              sequence="99"/>
+
+    <menuitem id="menu_account_export_excel_wizard"
+              name="Exporter en Excel"
+              parent="menu_account_export_excel_root"
+              action="action_invoice_report_wizard"
+              sequence="1"/>
+
+    <!-- Sous Ventes -->
+    <menuitem id="menu_sale_export_excel_root"
+              name="Rapports Excel"
+
+              sequence="99"/>
+
+    <menuitem id="menu_sale_export_excel_wizard"
+              name="Exporter en Excel"
+              parent="menu_sale_export_excel_root"
+              action="action_invoice_report_wizard"
+              sequence="1"/>
+
+    <!-- Sous Achats -->
+    <menuitem id="menu_purchase_export_excel_root"
+              name="Rapports Excel"
+
+              sequence="99"/>
+
+    <menuitem id="menu_purchase_export_excel_wizard"
+              name="Exporter en Excel"
+              parent="menu_purchase_export_excel_root"
+              action="action_invoice_report_wizard"
+              sequence="1"/>
+
+</odoo>

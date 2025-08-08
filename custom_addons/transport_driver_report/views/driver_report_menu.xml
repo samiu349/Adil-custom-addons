@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <menuitem id="menu_driver_report"
+            name="Rapport Chauffeur"
+            parent="sale.sale_menu_root"
+            action="action_export_driver_report_wizard"
+            sequence="90"/>
+</odoo>

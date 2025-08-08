@@ -1,0 +1,16 @@
+<odoo>
+  <record id="view_picking_form_inherit_2pages" model="ir.ui.view">
+    <field name="name">stock.picking.form.2pages</field>
+    <field name="model">stock.picking</field>
+    <field name="inherit_id" ref="stock.view_picking_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//button[@name='do_print_picking']" position="after">
+        <button name="action_print_2pages_pdf"
+                type="object"
+                string="Imprimer 2 pages par feuille"
+                class="btn-primary"
+                icon="fa-print"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

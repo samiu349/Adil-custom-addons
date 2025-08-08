@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_purchase_approver" model="res.groups">
+        <field name="name">Achat - Validation BC</field>
+     </record>
+
+    <record id="group_stock_view_cost_hidden" model="res.groups">
+        <field name="name">Stock - Afficher Coût</field>
+     </record>
+</odoo>
+

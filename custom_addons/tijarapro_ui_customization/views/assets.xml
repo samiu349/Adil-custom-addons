@@ -1,0 +1,7 @@
+<odoo>
+  <template id="assets_backend" name="TIJARAPRO UI Assets" inherit_id="web.assets_backend">
+    <xpath expr="." position="inside">
+      <script type="text/javascript" src="/tijarapro_ui_customization/static/src/js/custom_ui.js"/>
+    </xpath>
+  </template>
+</odoo>

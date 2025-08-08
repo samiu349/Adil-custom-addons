@@ -1,0 +1,53 @@
+<odoo>
+  <record id="view_invoice_report_wizard" model="ir.ui.view">
+    <field name="name">invoice.report.wizard.form</field>
+    <field name="model">invoice.report.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Exporter les Factures en Excel">
+        <group>
+          <field name="report_type"/>
+          <field name="date_month"/>
+        </group>
+        <footer>
+          <button name="export_excel_report" type="object" string="Exporter Excel" class="btn-primary"/>
+          <button string="Annuler" class="btn-secondary" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_invoice_report_wizard" model="ir.actions.act_window">
+    <field name="name">Exporter Factures Excel</field>
+    <field name="res_model">invoice.report.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <record id="action_export_invoice_excel" model="ir.actions.report">
+    <field name="name">Export Factures Excel</field>
+    <field name="model">invoice.report.wizard</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">alt_reports_excel.report_invoice_excel</field>
+    <field name="binding_model_id" ref="account.model_account_move"/>
+    <field name="binding_type">action</field>
+  </record>
+
+
+  <record id="action_invoice_export_from_list" model="ir.actions.server">
+    <field name="name">Exporter Factures par Excel</field>
+    <field name="model_id" ref="account.model_account_move"/>
+    <field name="binding_model_id" ref="account.model_account_move"/>
+    <field name="binding_type">action</field>
+    <field name="state">code</field>
+    <field name="code">
+        action = {
+            'type': 'ir.actions.act_window',
+            'name': 'Exporter Factures par Excel ',
+            'res_model': 'invoice.report.wizard',
+            'view_mode': 'form',
+            'target': 'new',
+        }
+    </field>
+</record>
+
+</odoo>

@@ -1,0 +1,35 @@
+<odoo>
+  <record id="action_export_driver_report_wizard" model="ir.actions.act_window">
+    <field name="name">Rapport transport</field>
+    <field name="res_model">report.transport.driver.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <report
+    id="action_export_driver_report_xlsx"
+    string="Rapport Chauffeurs Excel"
+    model="report.transport.driver.wizard"
+    report_type="xlsx"
+    name="transport_driver_report.report_driver_xlsx"
+    file="rapport_chauffeur"
+    print_report_name="'rapport_chauffeur'"
+  />
+
+
+  <record id="view_transport_driver_report_wizard" model="ir.ui.view">
+    <field name="name">report.transport.driver.wizard.form</field>
+    <field name="model">report.transport.driver.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Exporter Rapport Chauffeur">
+        <group>
+          <field name="date_month"/>
+        </group>
+        <footer>
+          <button name="export_report" type="object" string="Exporter Excel" class="btn-primary"/>
+          <button string="Annuler" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>
